@@ -25,7 +25,7 @@ Buffer of the standard error stream.
 ### class EZpawn
 The object this module exports.
 #### class SpawnError extends Error
-Is: SpawnResult
+Is: SpawnResult\
 Extended by: SignalExit, NonZeroExit
 
 An error of a spawned child process. Displays the SpawnResult.err as a string in the error message.
@@ -43,7 +43,6 @@ The exit code.
 ### async spawn(command, args, options)
 Arguments are passed to `require("child_process").spawn`.
 
-Resolves to: \<SpawnResult>
-
-Rejects to: \<SignalExit> if the process exits after receiving a signal
+Resolves to: \<SpawnResult>\
+Rejects to: \<SignalExit> if the process exits after receiving a signal\
 Rejects to: \<NonZeroExit> if the process exits with a non-zero exit code.
