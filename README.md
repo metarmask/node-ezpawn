@@ -17,9 +17,9 @@ Easy process spawning.
 ## Public API
 ### SpawnResult
 The result of a spawned child process.
-#### \<Buffer> SpawnResult.out
+#### \<Buffer> out
 Buffer of the standard output stream.
-#### \<Buffer> SpawnResult.err
+#### \<Buffer> err
 Buffer of the standard error stream.
 
 ### class EZpawn
