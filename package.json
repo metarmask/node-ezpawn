@@ -1,0 +1,7 @@
+{
+  "name": "ezpawn",
+  "version": "1.0.0",
+  "description": "Easily spawn a child process as a promise.",
+  "license": "MIT",
+  "main": "ezpawn"
+}
