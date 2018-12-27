@@ -17,9 +17,9 @@ Easy process spawning.
 ## Public API
 ### SpawnResult
 The result of a spawned child process.
-#### <Buffer> SpawnResult.out
+#### \<Buffer> SpawnResult.out
 Buffer of the standard output stream.
-#### <Buffer> SpawnResult.err
+#### \<Buffer> SpawnResult.err
 Buffer of the standard error stream.
 
 ### class EZpawn
@@ -32,18 +32,18 @@ An error of a spawned child process. Displays the SpawnResult.err as a string in
 
 #### class SignalExit extends EZpawn.SpawnError
 The spawned child process exited because of a signal.
-##### <string> signal
+##### \<string> signal
 The signal.
 
 #### class NonZeroExit extends EZpawn.SpawnError
 The spawned process exited with a non-zero exit code.
-##### <number> code
+##### \<number> code
 The exit code.
 
 ### async spawn(command, args, options)
 Arguments are passed to `require("child_process").spawn`.
 
-Resolves to: <SpawnResult>
+Resolves to: \<SpawnResult>
 
-Rejects to: <SignalExit> if the process exits after receiving a signal
-Rejects to: <NonZeroExit> if the process exits with a non-zero exit code.
+Rejects to: \<SignalExit> if the process exits after receiving a signal
+Rejects to: \<NonZeroExit> if the process exits with a non-zero exit code.
