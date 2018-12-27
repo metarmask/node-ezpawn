@@ -1,7 +1,8 @@
 {
   "name": "ezpawn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily spawn a child process as a promise.",
   "license": "MIT",
-  "main": "ezpawn"
+  "main": "ezpawn",
+  "homepage": "https://github.com/metarmask/node-ezpawn"
 }
