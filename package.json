@@ -3,7 +3,6 @@
   "version": "1.0.3",
   "description": "Easily spawn a child process as a promise.",
   "license": "MIT",
-  "main": "ezpawn",
   "homepage": "https://github.com/metarmask/node-ezpawn",
   "keywords": ["promise", "child_process", "spawn"],
   "devDependencies": {

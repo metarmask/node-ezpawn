@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 /* eslint-disable no-unused-expressions, no-magic-numbers */
-const EZpawn = require("../ezpawn.js")
+const EZpawn = require("../index.js")
 const Chai = require("chai")
 const ChaiAsPromised = require("chai-as-promised")
 Chai.use(ChaiAsPromised)
