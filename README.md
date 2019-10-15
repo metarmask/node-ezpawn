@@ -3,17 +3,17 @@ Easy process spawning.
 
 ## Example
 ```js
-    const EZpawn = require("ezpawn");
-    (async () => {
-        try {
-            const {out, err} = await EZpawn.spawn("echo", ["hi", "there"]);
-            console.log("Process output:", out.toString(), err.toString());
-        } catch(error) {
-            if(!(error instanceof EZpawn.SpawnError)) throw error;
-            const {out, err} = error;
-            console.log("An error occured but we still received some output: " + out.toString());
-        }
-    })();
+const EZpawn = require("ezpawn")
+(async () => {
+  try {
+    const {out, err} = await EZpawn.spawn("echo", ["hi", "there"])
+    console.log("Process output:", out.toString(), err.toString())
+  } catch(error) {
+    if(!(error instanceof EZpawn.SpawnError)) throw error
+    const {out, err} = error
+    console.log(`An error occurred after this output: ${out.toString()}`)
+  }
+})()
 ```
 
 ## Public API
