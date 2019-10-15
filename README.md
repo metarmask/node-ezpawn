@@ -2,6 +2,7 @@
 Easy process spawning.
 
 ## Example
+```js
     const EZpawn = require("ezpawn");
     (async () => {
         try {
@@ -13,6 +14,7 @@ Easy process spawning.
             console.log("An error occured but we still received some output: " + out.toString());
         }
     })();
+```
 
 ## Public API
 ### SpawnResult
